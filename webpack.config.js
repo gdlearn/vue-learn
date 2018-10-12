@@ -6,7 +6,7 @@ const IS_ENV = process.env.NODE_ENV == 'production'
 
 
 var plugins = []
-if (IS_ENV) { //生产环境
+if (IS_ENV) { //生产环境 webpack修改
     plugins.push(new webpack.DefinePlugin({
         'process.env': { //设置成生产环境
             NODE_ENV: '"production"'
